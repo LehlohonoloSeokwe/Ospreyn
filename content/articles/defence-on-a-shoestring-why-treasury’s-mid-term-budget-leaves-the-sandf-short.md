@@ -23,7 +23,7 @@ sources:
     title: Department of Defence annual report
     year: '2026'
     url: https://www.gov.za/news/speeches/minister-enoch-godongwana-medium-term-budget-policy-statement-2026-21-oct-2026
-draft: true
+draft: false
 ---
 
 ## Defence on a Shoestring: What the Mid-Term Budget Means for the SANDF
