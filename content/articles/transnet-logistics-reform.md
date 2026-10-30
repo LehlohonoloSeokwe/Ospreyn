@@ -1,12 +1,12 @@
 ---
 title: 'De-bottlenecking Transnet Freight Corridors: Private Sector Participation and Export Competitiveness'
-date: '2026-09-01'
+date: 2026-09-01
 topic: State-Owned Enterprises, Freight Logistics & Export Policy
 author: Ospreyn Editorial
 summary: 'Draft: figures in this piece have no cited source yet. Add a source for each number, or remove it, before publishing.'
 takeaways: []
 sources: []
-draft: true
+draft: false
 ---
 
 ## Executive Summary
