@@ -45,7 +45,12 @@ export const IndicatorDetailPage: React.FC = () => {
   useEffect(() => {
     setLoading(true);
     setError(null);
-    const filename = id === 'interest-rates' ? 'interest_rates.json' : id === 'debt' ? 'debt_gdp.json' : `${id}.json`;
+      const DATA_FILES: Record<string, string> = {
+     'interest-rates': 'interest_rates.json',
+     debt: 'debt_gdp.json',
+     rand: 'exchange_rate.json',
+   };
+   const filename = DATA_FILES[id] ?? `${id}.json`;
 
     fetch(`/data/${filename}`)
       .then((res) => {
