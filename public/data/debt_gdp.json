@@ -1,0 +1,144 @@
+{
+  "id": "debt",
+  "indicatorName": "Central Government Debt, Total (% of GDP)",
+  "shortName": "Government Debt % GDP",
+  "unit": "% of GDP",
+  "frequency": "Annual",
+  "sourceName": "World Bank / National Treasury Budget Review",
+  "sourceUrl": "https://data.worldbank.org/indicator/GC.DOD.TOTL.GD.ZS?locations=ZA",
+  "retrievalDate": "2026-10-29",
+  "lastPeriod": "2024",
+  "latestValue": 82.76,
+  "previousValue": 79.41,
+  "changeAbsolute": 3.35,
+  "changePercentage": 4.22,
+  "qualityStatus": "VERIFIED",
+  "directionFavorable": "down",
+  "seriesCode": "GC.DOD.TOTL.GD.ZS",
+  "definitionNote": "Central government gross debt consists of all liabilities that require payment or payments of interest and/or principal by the debtor to the creditor at a date or dates in the future. Expressed as a percentage of nominal GDP.",
+  "methodologyDetail": "National Treasury defines gross loan debt as debt issued by the national government, excluding guaranteed debt of state-owned enterprises (such as Eskom and Transnet) unless explicitly transferred to the sovereign balance sheet.",
+  "data": [
+    {
+      "period": "1990",
+      "value": 32.4
+    },
+    {
+      "period": "1991",
+      "value": 33.91
+    },
+    {
+      "period": "1992",
+      "value": 36.9
+    },
+    {
+      "period": "1993",
+      "value": 39.95
+    },
+    {
+      "period": "1994",
+      "value": 44.82
+    },
+    {
+      "period": "1995",
+      "value": 44.87
+    },
+    {
+      "period": "1996",
+      "value": 44.23
+    },
+    {
+      "period": "1997",
+      "value": 43.18
+    },
+    {
+      "period": "1998",
+      "value": 44.65
+    },
+    {
+      "period": "1999",
+      "value": 42.18
+    },
+    {
+      "period": "2000",
+      "value": 39.64
+    },
+    {
+      "period": "2015",
+      "value": 52.65
+    },
+    {
+      "period": "2016",
+      "value": 53.74
+    },
+    {
+      "period": "2017",
+      "value": 56.26
+    },
+    {
+      "period": "2018",
+      "value": 59.1
+    },
+    {
+      "period": "2019",
+      "value": 64.59,
+      "annotation": "SOE bailouts (Eskom) & fiscal slippage"
+    },
+    {
+      "period": "2020",
+      "value": 75.73,
+      "annotation": "COVID stimulus & revenue collapse"
+    },
+    {
+      "period": "2021",
+      "value": 74.08
+    },
+    {
+      "period": "2022",
+      "value": 76.23
+    },
+    {
+      "period": "2023",
+      "value": 79.41
+    },
+    {
+      "period": "2024",
+      "value": 82.76,
+      "annotation": "Primary budget surplus achieved; stabilization target"
+    }
+  ],
+  "secondarySeries": {
+    "name": "National Treasury Medium-Term Budget Policy (MTBPS) Trajectory",
+    "unit": "% of GDP",
+    "sourceName": "National Treasury Medium Term Budget Policy Statement (MTBPS 2024)",
+    "sourceUrl": "http://www.treasury.gov.za/documents/mtbps/",
+    "definitionNote": "National Treasury baseline projections for gross debt to GDP ratio.",
+    "data": [
+      {
+        "period": "2021/22",
+        "value": 69
+      },
+      {
+        "period": "2022/23",
+        "value": 70.9
+      },
+      {
+        "period": "2023/24",
+        "value": 74.1
+      },
+      {
+        "period": "2024/25",
+        "value": 74.7,
+        "annotation": "Projected peak"
+      },
+      {
+        "period": "2025/26",
+        "value": 75.3,
+        "annotation": "Target stabilization"
+      },
+      {
+        "period": "2026/27",
+        "value": 74.3
+      }
+    ]
+  }
+}

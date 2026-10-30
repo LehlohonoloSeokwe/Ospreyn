@@ -1,0 +1,263 @@
+{
+  "id": "unemployment",
+  "indicatorName": "Total Unemployment Rate (% of Labour Force)",
+  "shortName": "Unemployment Rate",
+  "unit": "%",
+  "frequency": "Annual",
+  "sourceName": "World Bank (ILO Modeled Estimate) & Stats SA QLFS",
+  "sourceUrl": "https://data.worldbank.org/indicator/SL.UEM.TOTL.ZS?locations=ZA",
+  "retrievalDate": "2026-10-29",
+  "lastPeriod": "2025",
+  "latestValue": 32.39,
+  "previousValue": 32.28,
+  "changeAbsolute": 0.11,
+  "changePercentage": 0.34,
+  "qualityStatus": "VERIFIED",
+  "directionFavorable": "down",
+  "seriesCode": "SL.UEM.TOTL.ZS",
+  "definitionNote": "CRITICAL DEFINITIONAL DISTINCTION: The primary series displayed reflects the World Bank/ILO modeled estimate. In domestic South African policy discussions, Statistics South Africa publishes two distinct rates in the Quarterly Labour Force Survey (P0211): (1) the official unemployment rate (LU1: people who are not employed, searched for work and are available) and (2) a broader measure that adds the potential labour force, including discouraged work-seekers. Stats SA has adopted the 19th ICLS labour statistics resolution, so the older \"expanded rate\" has been replaced by LU3 since Q3 2025.",
+  "methodologyDetail": "The headline series is the World Bank/ILO modelled annual estimate. The secondary series is Stats SA's official unemployment rate (QLFS, LU1), which was 33.6% in Q2 2026, up from 32.7% in Q1 2026. Stats SA reported an expanded rate until Q2 2025 and now reports the combined rate of unemployment and the potential labour force (LU3) as the comparable broader measure: 43.8% in Q2 2026.",
+  "data": [
+    {
+      "period": "1991",
+      "value": 23.14
+    },
+    {
+      "period": "1992",
+      "value": 23.46
+    },
+    {
+      "period": "1993",
+      "value": 23.36
+    },
+    {
+      "period": "1994",
+      "value": 23.07
+    },
+    {
+      "period": "1995",
+      "value": 22.7
+    },
+    {
+      "period": "1996",
+      "value": 22.5
+    },
+    {
+      "period": "1997",
+      "value": 22.55
+    },
+    {
+      "period": "1998",
+      "value": 22.74
+    },
+    {
+      "period": "1999",
+      "value": 22.88
+    },
+    {
+      "period": "2000",
+      "value": 22.79
+    },
+    {
+      "period": "2001",
+      "value": 22.65
+    },
+    {
+      "period": "2002",
+      "value": 22.58
+    },
+    {
+      "period": "2003",
+      "value": 22.68
+    },
+    {
+      "period": "2004",
+      "value": 22.57
+    },
+    {
+      "period": "2005",
+      "value": 22.47
+    },
+    {
+      "period": "2006",
+      "value": 22.3
+    },
+    {
+      "period": "2007",
+      "value": 22.26
+    },
+    {
+      "period": "2008",
+      "value": 22.41
+    },
+    {
+      "period": "2009",
+      "value": 23.52
+    },
+    {
+      "period": "2010",
+      "value": 24.68
+    },
+    {
+      "period": "2011",
+      "value": 24.64
+    },
+    {
+      "period": "2012",
+      "value": 24.73
+    },
+    {
+      "period": "2013",
+      "value": 24.56
+    },
+    {
+      "period": "2014",
+      "value": 24.89
+    },
+    {
+      "period": "2015",
+      "value": 25.15
+    },
+    {
+      "period": "2016",
+      "value": 26.54
+    },
+    {
+      "period": "2017",
+      "value": 27.04
+    },
+    {
+      "period": "2018",
+      "value": 26.91
+    },
+    {
+      "period": "2019",
+      "value": 28.47
+    },
+    {
+      "period": "2020",
+      "value": 29.22,
+      "annotation": "COVID-19 Job Losses"
+    },
+    {
+      "period": "2021",
+      "value": 34.01,
+      "annotation": "Historical Peak Unemployment"
+    },
+    {
+      "period": "2022",
+      "value": 33.27
+    },
+    {
+      "period": "2023",
+      "value": 32.1
+    },
+    {
+      "period": "2024",
+      "value": 32.28
+    },
+    {
+      "period": "2025",
+      "value": 32.39
+    }
+  ],
+  "secondarySeries": {
+    "name": "Stats SA QLFS official unemployment rate (LU1)",
+    "unit": "%",
+    "sourceName": "Statistics South Africa (P0211 Quarterly Labour Force Survey)",
+    "sourceUrl": "https://www.statssa.gov.za/?page_id=1854&PPN=P0211",
+    "definitionNote": "Official unemployment rate (LU1) from the Quarterly Labour Force Survey. The broader LU3 measure was 43.8% in Q2 2026 and is not charted here.",
+    "data": [
+      {
+        "period": "2022-Q1",
+        "value": 34.5,
+        "annotation": "Official strict"
+      },
+      {
+        "period": "2022-Q2",
+        "value": 33.9,
+        "annotation": "Official strict"
+      },
+      {
+        "period": "2022-Q3",
+        "value": 32.9,
+        "annotation": "Official strict"
+      },
+      {
+        "period": "2022-Q4",
+        "value": 32.7,
+        "annotation": "Official strict"
+      },
+      {
+        "period": "2023-Q1",
+        "value": 32.9,
+        "annotation": "Official strict"
+      },
+      {
+        "period": "2023-Q2",
+        "value": 32.6,
+        "annotation": "Official strict"
+      },
+      {
+        "period": "2023-Q3",
+        "value": 31.9,
+        "annotation": "Official strict"
+      },
+      {
+        "period": "2023-Q4",
+        "value": 32.1,
+        "annotation": "Official strict"
+      },
+      {
+        "period": "2024-Q1",
+        "value": 32.9,
+        "annotation": "Official strict"
+      },
+      {
+        "period": "2024-Q2",
+        "value": 33.5,
+        "annotation": "Official strict"
+      },
+      {
+        "period": "2024-Q3",
+        "value": 32.1,
+        "annotation": "Official strict"
+      },
+      {
+        "period": "2024-Q4",
+        "value": 31.9,
+        "annotation": "Official"
+      },
+      {
+        "period": "2025-Q1",
+        "value": 32.9,
+        "annotation": "Official"
+      },
+      {
+        "period": "2025-Q2",
+        "value": 33.2,
+        "annotation": "Official"
+      },
+      {
+        "period": "2025-Q3",
+        "value": 31.9,
+        "annotation": "Official"
+      },
+      {
+        "period": "2025-Q4",
+        "value": 31.4,
+        "annotation": "Official"
+      },
+      {
+        "period": "2026-Q1",
+        "value": 32.7,
+        "annotation": "Official"
+      },
+      {
+        "period": "2026-Q2",
+        "value": 33.6,
+        "annotation": "Official; latest release, 11 Aug 2026"
+      }
+    ]
+  }
+}

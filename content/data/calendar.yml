@@ -1,0 +1,49 @@
+events:
+- id: cal-1
+  date: '2026-11-19'
+  title: SARB Monetary Policy Committee (MPC) Rate Announcement
+  institution: South African Reserve Bank
+  category: Monetary Policy
+  description: Governor Lesetja Kganyago announces the MPC decision on the repurchase rate following the November 2026 meeting.
+  sourceUrl: https://www.resbank.co.za/en/home/what-we-do/monetary-policy/monetary-policy-committee-dates
+  confirmed: true
+- id: cal-2
+  date: '2026-11-25'
+  title: Consumer Price Index (CPI) — October 2026 Release (P0141)
+  institution: Statistics South Africa
+  category: Statistical Release
+  description: Monthly headline CPI, core inflation, and goods vs services inflation breakdown for October 2026.
+  sourceUrl: https://www.statssa.gov.za/?page_id=1854&PPN=P0141
+  confirmed: false
+- id: cal-3
+  date: '2026-12-01'
+  title: Gross Domestic Product (GDP) — Q3 2026 Release (P0441)
+  institution: Statistics South Africa
+  category: Statistical Release
+  description: Official quarterly real GDP estimate by industry (production) and expenditure approaches.
+  sourceUrl: https://www.statssa.gov.za/?page_id=1854&PPN=P0441
+  confirmed: false
+- id: cal-4
+  date: '2026-12-10'
+  title: Quarterly Labour Force Survey (QLFS) — Q3 2026 (P0211)
+  institution: Statistics South Africa
+  category: Statistical Release
+  description: National employment, official strict unemployment rate, expanded unemployment rate, and youth absorption rate.
+  sourceUrl: https://www.statssa.gov.za/?page_id=1854&PPN=P0211
+  confirmed: false
+- id: cal-5
+  date: '2027-01-28'
+  title: SARB MPC Statement — January 2027 Rate Decision
+  institution: South African Reserve Bank
+  category: Monetary Policy
+  description: First monetary policy decision of 2027, updating the core forecast model (QPM) growth and inflation trajectories.
+  sourceUrl: https://www.resbank.co.za/en/home/what-we-do/monetary-policy/monetary-policy-committee-dates
+  confirmed: false
+- id: cal-6
+  date: '2027-02-18'
+  title: National Budget Speech 2027/28
+  institution: National Treasury
+  category: Fiscal & Budget
+  description: Minister of Finance tables the 2027 National Budget in Parliament, detailing tax policy adjustments, expenditure ceilings, and sovereign debt targets.
+  sourceUrl: http://www.treasury.gov.za/documents/national%20budget/
+  confirmed: false

@@ -1,0 +1,228 @@
+[
+  {
+    "id": "banking",
+    "name": "Banking & Financial Services",
+    "headlineSummary": "The cornerstone of South Africa’s sophisticated capital markets, governed by the Twin Peaks model and navigating international anti-money laundering (FATF) remediation.",
+    "gdpSharePercent": null,
+    "formalEmployment": "To be verified (Stats SA QES)",
+    "gdpSource": "Stats SA GDP P0441 (Finance, Real Estate & Business Services)",
+    "gdpSourceUrl": "https://www.statssa.gov.za/?page_id=1854&PPN=P0441",
+    "lastPeriod": "2024-Q3",
+    "retrievalDate": "2026-10-29",
+    "keyRegulators": [
+      "Prudential Authority (PA) — SARB",
+      "Financial Sector Conduct Authority (FSCA)",
+      "Financial Intelligence Centre (FIC)",
+      "National Credit Regulator (NCR)"
+    ],
+    "keyLegislation": [
+      "Financial Sector Regulation Act (FSRA) 9 of 2017 (Twin Peaks)",
+      "Banks Act 94 of 1990",
+      "Financial Intelligence Centre Act (FICA) (Amended 2022 for FATF compliance)",
+      "Conduct of Financial Institutions (COFI) Bill (forthcoming)"
+    ],
+    "policyIssues": [
+      {
+        "topic": "After the FATF Grey List",
+        "summary": "South Africa was removed from the FATF grey list on 24 October 2025. Its next FATF evaluation begins in 2026, so beneficial ownership transparency and the prosecution of financial crime remain in focus.",
+        "stakeholders": "National Treasury, FIC, NPA, Commercial Banks (BASA)"
+      },
+      {
+        "topic": "Two-Pot Retirement System Rollout",
+        "summary": "Enacted in September 2024, enabling split retirement savings into savings and vested pots. Liquidity outflows from retirement funds required careful asset-liability management by domestic banks and asset managers.",
+        "stakeholders": "FSCA, ASISA, Pension Funds, SARS"
+      },
+      {
+        "topic": "Fintech, Open Banking & Payment System Modernization",
+        "summary": "Implementation of the SARB National Payment System Framework (Vision 2025), PayShap real-time clearing, and regulatory sandboxing of stablecoins and crypto assets.",
+        "stakeholders": "SARB FinTech Unit, Payment Association of SA (PASA), Challenger Banks"
+      }
+    ],
+    "officialPublications": [
+      {
+        "title": "Financial Stability Review (First Edition 2024)",
+        "publisher": "South African Reserve Bank",
+        "url": "https://www.resbank.co.za/en/home/publications/publication-detail-pages/reviews/financial-stability-review/2024/Financial-Stability-Review-First-Edition-2024",
+        "date": "2024-05",
+        "type": "Regulatory Framework"
+      },
+      {
+        "title": "Prudential Authority Annual Report 2023/24",
+        "publisher": "Prudential Authority",
+        "url": "https://www.resbank.co.za/en/home/publications/publication-detail-pages/prudential-authority/pa-annual-reports/2024/Annual-Report-2023-24",
+        "date": "2024-07",
+        "type": "Regulatory Framework"
+      },
+      {
+        "title": "Regulatory Strategy 2021-2025",
+        "publisher": "Financial Sector Conduct Authority",
+        "url": "https://www.fsca.co.za/",
+        "date": "2024-01",
+        "type": "Regulatory Framework"
+      }
+    ]
+  },
+  {
+    "id": "mining",
+    "name": "Mining & Critical Resources",
+    "headlineSummary": "Historical industrial foundation endowed with world-leading platinum group metals (PGMs), manganese, and chrome reserves, but constrained by Transnet rail/port bottlenecks and the global energy transition.",
+    "gdpSharePercent": null,
+    "formalEmployment": "To be verified (Stats SA QES)",
+    "gdpSource": "Stats SA GDP P0441 (Mining and Quarrying)",
+    "gdpSourceUrl": "https://www.statssa.gov.za/?page_id=1854&PPN=P0441",
+    "lastPeriod": "2024-Q3",
+    "retrievalDate": "2026-10-29",
+    "keyRegulators": [
+      "Department of Mineral and Petroleum Resources (DMPR)",
+      "Mine Health and Safety Inspectorate",
+      "National Nuclear Regulator (NNR)",
+      "Department of Forestry, Fisheries and the Environment (DFFE)"
+    ],
+    "keyLegislation": [
+      "Mineral and Petroleum Resources Development Act (MPRDA) 28 of 2002",
+      "Mining Charter III (and associated High Court rulings on \"once empowered, always empowered\")",
+      "Climate Change Act 22 of 2024"
+    ],
+    "policyIssues": [
+      {
+        "topic": "Logistics Corridor Crisis (Transnet Freight Rail)",
+        "summary": "Rail and port constraints on the coal, iron ore and manganese export corridors have limited export volumes and held back investment by mining companies.",
+        "stakeholders": "Transnet, Minerals Council South Africa, National Logistics Crisis Committee (NLCC)"
+      },
+      {
+        "topic": "Cadastre System Modernization",
+        "summary": "Migration from the dysfunctional SAMRAD licensing system to an auditable, transparent modern cadastral management software system to resolve thousands of backlog exploration licenses.",
+        "stakeholders": "DMPR, Council for Geoscience, Junior Miners"
+      },
+      {
+        "topic": "Just Energy Transition & PGM Demand Shifts",
+        "summary": "Global transition to battery electric vehicles (BEVs) threatens long-term demand for internal combustion catalytic converters (PGMs: platinum, palladium, rhodium), necessitating investments in green hydrogen.",
+        "stakeholders": "Presidential Climate Commission (PCC), Eskom, Mining Unions (NUM, AMCU)"
+      }
+    ],
+    "officialPublications": [
+      {
+        "title": "Facts and Figures 2023 Pocketbook",
+        "publisher": "Minerals Council South Africa",
+        "url": "https://www.mineralscouncil.org.za/industry-news/publications/facts-and-figures",
+        "date": "2024-02",
+        "type": "Industry Report"
+      },
+      {
+        "title": "Mining Production and Sales (Statistical Release P2041)",
+        "publisher": "Statistics South Africa",
+        "url": "https://www.statssa.gov.za/?page_id=1854&PPN=P2041",
+        "date": "2024-11",
+        "type": "Gazette"
+      }
+    ]
+  },
+  {
+    "id": "retail",
+    "name": "Retail & Consumer Goods (FMCG)",
+    "headlineSummary": "High-volume consumer facing trade exposed directly to household real disposable income pressures, food inflation dynamics, and intense regulatory oversight by the Competition Commission.",
+    "gdpSharePercent": null,
+    "formalEmployment": "To be verified (Stats SA QES)",
+    "gdpSource": "Stats SA GDP P0441 (Wholesale, retail & motor trade)",
+    "gdpSourceUrl": "https://www.statssa.gov.za/?page_id=1854&PPN=P0441",
+    "lastPeriod": "2024-Q3",
+    "retrievalDate": "2026-10-29",
+    "keyRegulators": [
+      "Competition Commission South Africa (CCSA)",
+      "National Consumer Commission (NCC)",
+      "Department of Trade, Industry and Competition (DTIC)"
+    ],
+    "keyLegislation": [
+      "Competition Act 89 of 1998 (as amended)",
+      "Consumer Protection Act 68 of 2008",
+      "National Credit Act 34 of 2005"
+    ],
+    "policyIssues": [
+      {
+        "topic": "Essential Food Pricing Inquiries & Margin Scrutiny",
+        "summary": "The Competition Commission actively monitors the \"rocket-and-feather\" phenomenon—where retail prices surge rapidly when input costs rise (sunflower oil, poultry, maize) but decrease sluggishly when farmgate prices normalize.",
+        "stakeholders": "Competition Commission, Grocery Retailers (Shoprite, Pick n Pay, Woolworths, Spar), Consumer Groups"
+      },
+      {
+        "topic": "Low-Value E-commerce Parcels and Customs Rules",
+        "summary": "Policy attention has focused on how low-value parcels from offshore e-commerce platforms are taxed compared with goods sold by local retailers. Check SARS for the current customs duty and VAT rules.",
+        "stakeholders": "SARS, DTIC, National Clothing Retail Federation (NCRF), SACTWU"
+      },
+      {
+        "topic": "Household Debt Service Burdens",
+        "summary": "Interest rate increases raise the cost of servicing household debt and weigh on discretionary retail spending. With the Reserve Bank raising the repo rate in May and September 2026, this pressure has resumed.",
+        "stakeholders": "SARB, Commercial Lenders, Retail Credit Providers"
+      }
+    ],
+    "officialPublications": [
+      {
+        "title": "Essential Food Price Monitoring Report",
+        "publisher": "Competition Commission South Africa",
+        "url": "https://www.compcom.co.za/essential-food-pricing-monitoring/",
+        "date": "2024-08",
+        "type": "Regulatory Framework"
+      },
+      {
+        "title": "Retail Trade Sales (Statistical Release P6242.1)",
+        "publisher": "Statistics South Africa",
+        "url": "https://www.statssa.gov.za/?page_id=1854&PPN=P6242.1",
+        "date": "2024-11",
+        "type": "Gazette"
+      }
+    ]
+  },
+  {
+    "id": "telecoms",
+    "name": "ICT & Telecommunications",
+    "headlineSummary": "Dynamic digital backbone driving financial inclusion, mobile commerce, and cloud infrastructure, operating under intensive spectrum policy debates and municipal rights-of-way battles.",
+    "gdpSharePercent": null,
+    "formalEmployment": "To be verified (Stats SA QES)",
+    "gdpSource": "Stats SA GDP P0441 (Transport, storage & communication)",
+    "gdpSourceUrl": "https://www.statssa.gov.za/?page_id=1854&PPN=P0441",
+    "lastPeriod": "2024-Q3",
+    "retrievalDate": "2026-10-29",
+    "keyRegulators": [
+      "Independent Communications Authority of South Africa (ICASA)",
+      "Department of Communications and Digital Technologies (DCDT)",
+      "Information Regulator (POPIA enforcement)"
+    ],
+    "keyLegislation": [
+      "Electronic Communications Act (ECA) 36 of 2005",
+      "Protection of Personal Information Act (POPIA) 4 of 2013",
+      "Cybercrimes Act 19 of 2020"
+    ],
+    "policyIssues": [
+      {
+        "topic": "Second Spectrum Auction & 5G Standalone Deployment",
+        "summary": "Following the watershed 2022 spectrum auction which raised R14.4bn for the fiscus, ICASA is preparing secondary sub-1GHz and 3.5GHz-10GHz spectrum allocations to accelerate rural 5G access and shut down legacy 2G/3G networks.",
+        "stakeholders": "ICASA, Vodacom, MTN, Telkom, Rain, Liquid Intelligent Technologies"
+      },
+      {
+        "topic": "Competition Commission Data Services Market Inquiries",
+        "summary": "Enforcement of data pricing reductions, compulsory free monthly lifelines of data for indigent users, and zero-rating of educational and government domains.",
+        "stakeholders": "Competition Commission, Mobile Network Operators (MNOs), Civil Society"
+      },
+      {
+        "topic": "Critical Infrastructure Security & Fibre Rights-of-Way",
+        "summary": "Network availability threatened by chronic battery theft and diesel theft at base stations during power outages, alongside bureaucratic delays in municipal rapid-deployment guidelines.",
+        "stakeholders": "SAPS, Critical Infrastructure Protection Council, SALGA"
+      }
+    ],
+    "officialPublications": [
+      {
+        "title": "State of ICT Sector in South Africa Report",
+        "publisher": "ICASA",
+        "url": "https://www.icasa.org.za/legislation-and-regulations/state-of-the-ict-sector-reports",
+        "date": "2024-03",
+        "type": "Regulatory Framework"
+      },
+      {
+        "title": "Next Generation Spectrum Policy for South Africa",
+        "publisher": "Department of Communications and Digital Technologies",
+        "url": "https://www.dcdt.gov.za/",
+        "date": "2024-05",
+        "type": "Gazette"
+      }
+    ]
+  }
+]

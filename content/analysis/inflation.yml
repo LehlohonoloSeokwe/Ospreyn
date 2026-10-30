@@ -1,0 +1,9 @@
+title: 'CPI Inflation: From the 2022 Peak to a New Test'
+indicator: Consumer price inflation (annual average %, World Bank series)
+trend: Annual average CPI inflation peaked at 7.0% in 2022, then fell to 6.1% in 2023, 4.4% in 2024 and 3.2% in 2025. In November 2025 the target changed from a 3% to 6% range to a 3% target with a one percentage point tolerance band (2% to 4%), so 2024 and 2025 readings are best judged against the new target. The Reserve Bank raised the repo rate twice in 2026, so the latest monthly CPI releases (Stats SA P0141) and the Monetary Policy Committee statements should be read alongside this annual series.
+whyItMatters: 'Inflation erodes purchasing power, and it weighs most on households that spend a larger share of their budgets on food and transport. It also drives interest-rate decisions: when inflation risks rise, the Reserve Bank may raise rates, which increases borrowing costs.'
+whoIsAffected: Households, especially lower-income households (food and transport prices); savers and pensioners on fixed incomes; borrowers and lenders (inflation shapes interest-rate decisions).
+sources:
+- World Bank, indicator FP.CPI.TOTL.ZG (South Africa)
+- Stats SA, Consumer Price Index (P0141)
+- National Treasury and SARB, Announcement of the new inflation target for South Africa, 12 November 2025 (treasury.gov.za)

@@ -1,0 +1,224 @@
+# Ospreyn admin (Sveltia CMS). Every save becomes a commit in GitHub, and Netlify rebuilds the site.
+# BEFORE FIRST USE: change `repo` below to your GitHub "owner/repository".
+backend:
+  name: github
+  repo: YOUR-GITHUB-USERNAME/YOUR-REPOSITORY
+  branch: main
+
+site_url: https://ospreyn.com
+display_url: https://ospreyn.com
+
+media_folder: public/uploads
+public_folder: /uploads
+
+collections:
+  # ---------------------------------------------------------------- Articles
+  - name: articles
+    label: Articles and briefs
+    label_singular: Article
+    folder: content/articles
+    extension: md
+    format: frontmatter
+    create: true
+    slug: "{{slug}}"
+    summary: "{{title}} ({{date}})"
+    sortable_fields: [date, title]
+    fields:
+      - { name: title, label: Title, widget: string }
+      - { name: date, label: Date, widget: datetime, time_format: false, date_format: "YYYY-MM-DD", format: "YYYY-MM-DD" }
+      - { name: topic, label: Topic, widget: string, hint: "For example: Monetary policy, Financial regulation" }
+      - { name: author, label: Author, widget: string, default: "Ospreyn Editorial", hint: "Shown as the byline. Use a team name, or a pen name if you prefer." }
+      - { name: summary, label: Summary, widget: text, hint: "Two or three sentences shown above the article." }
+      - { name: takeaways, label: Key takeaways, widget: list, field: { name: takeaway, label: Takeaway, widget: string }, required: false }
+      - name: sources
+        label: Sources
+        widget: list
+        required: false
+        hint: "Every factual claim should trace to a source listed here."
+        fields:
+          - { name: org, label: Organisation or author, widget: string }
+          - { name: title, label: Title, widget: string }
+          - { name: year, label: Year, widget: string }
+          - { name: url, label: Link, widget: string }
+      - { name: draft, label: Draft (hidden from the site), widget: boolean, default: true }
+      - { name: body, label: Article text, widget: markdown }
+
+  # ---------------------------------------------------------------- Indicator analysis
+  - name: analysis
+    label: Indicator analysis
+    files:
+      - { name: gdp, label: GDP growth, file: content/analysis/gdp.yml, fields: &analysis_fields [
+          { name: title, label: Heading, widget: string },
+          { name: indicator, label: Indicator description, widget: string },
+          { name: trend, label: 1. Trend, widget: text },
+          { name: whyItMatters, label: 2. Why it matters, widget: text },
+          { name: whoIsAffected, label: 3. Who is affected, widget: text },
+          { name: sources, label: Sources, widget: list, field: { name: source, label: Source, widget: string } }
+        ] }
+      - { name: inflation, label: CPI inflation, file: content/analysis/inflation.yml, fields: *analysis_fields }
+      - { name: interest-rates, label: Repo rate, file: content/analysis/interest-rates.yml, fields: *analysis_fields }
+      - { name: unemployment, label: Unemployment, file: content/analysis/unemployment.yml, fields: *analysis_fields }
+      - { name: rand, label: The rand, file: content/analysis/rand.yml, fields: *analysis_fields }
+      - { name: debt, label: Government debt, file: content/analysis/debt.yml, fields: *analysis_fields }
+
+  # ---------------------------------------------------------------- Overview
+  - name: overview
+    label: Overview page text
+    files:
+      - name: overview
+        label: Where the economy stands
+        file: content/overview.yml
+        fields:
+          - { name: updated, label: "Updated (for example: October 2026)", widget: string }
+          - { name: headline, label: Headline, widget: string }
+          - { name: summary, label: Opening paragraph, widget: text }
+          - name: points
+            label: Key points (shown in order)
+            widget: list
+            fields:
+              - { name: title, label: Title, widget: string }
+              - { name: text, label: Text (include the source), widget: text }
+
+  # ---------------------------------------------------------------- Data you update by hand
+  - name: data
+    label: Data (update after each release)
+    files:
+      - name: repo_rate
+        label: Repo rate (add a row after each MPC decision)
+        file: content/data/repo_rate.yml
+        fields:
+          - name: meta
+            label: Series details
+            widget: object
+            collapsed: true
+            fields:
+              - { name: id, label: ID, widget: string }
+              - { name: indicatorName, label: Name, widget: string }
+              - { name: shortName, label: Short name, widget: string }
+              - { name: unit, label: Unit, widget: string }
+              - { name: frequency, label: Frequency, widget: string }
+              - { name: sourceName, label: Source name, widget: string }
+              - { name: sourceUrl, label: Source link, widget: string }
+              - { name: qualityStatus, label: Quality status, widget: select, options: [VERIFIED, TO_VERIFY, STALE] }
+              - { name: directionFavorable, label: Favourable direction, widget: select, options: [up, down, neutral] }
+              - { name: seriesCode, label: Series code, widget: string }
+              - { name: definitionNote, label: Definition note, widget: text }
+              - { name: methodologyDetail, label: Methodology, widget: text }
+              - { name: lastReviewed, label: Last reviewed, widget: string, hint: "YYYY-MM-DD" }
+          - name: decisionsMeta
+            label: Decision series details
+            widget: object
+            collapsed: true
+            fields:
+              - { name: name, label: Name, widget: string }
+              - { name: unit, label: Unit, widget: string }
+              - { name: sourceName, label: Source name, widget: string }
+              - { name: sourceUrl, label: Source link, widget: string }
+              - { name: definitionNote, label: Definition note, widget: text }
+          - name: decisions
+            label: MPC decisions (oldest first, period as YYYY-MM)
+            widget: list
+            fields:
+              - { name: period, label: Period (YYYY-MM), widget: string }
+              - { name: value, label: Repo rate (%), widget: number, value_type: float }
+              - { name: annotation, label: Note, widget: string, required: false }
+          - name: annual
+            label: Year-end values for completed years (the current year is worked out for you)
+            widget: list
+            fields:
+              - { name: period, label: Year, widget: string }
+              - { name: value, label: Repo rate (%), widget: number, value_type: float }
+              - { name: annotation, label: Note, widget: string, required: false }
+
+      - name: qlfs
+        label: Unemployment, Stats SA QLFS (add a row each quarter)
+        file: content/data/qlfs.yml
+        fields:
+          - name: meta
+            label: Series details
+            widget: object
+            collapsed: true
+            fields:
+              - { name: name, label: Name, widget: string }
+              - { name: unit, label: Unit, widget: string }
+              - { name: sourceName, label: Source name, widget: string }
+              - { name: sourceUrl, label: Source link, widget: string }
+              - { name: definitionNote, label: Definition note, widget: text }
+              - { name: lastReviewed, label: Last reviewed, widget: string, hint: "YYYY-MM-DD" }
+          - name: data
+            label: Quarterly rates (oldest first, period as YYYY-Q1)
+            widget: list
+            fields:
+              - { name: period, label: Period (YYYY-Q1), widget: string }
+              - { name: value, label: Official rate (%), widget: number, value_type: float }
+              - { name: annotation, label: Note, widget: string, required: false }
+
+      - name: calendar
+        label: Calendar of releases and decisions
+        file: content/data/calendar.yml
+        fields:
+          - name: events
+            label: Events
+            widget: list
+            fields:
+              - { name: id, label: ID (for example cal-7), widget: string }
+              - { name: date, label: Date (YYYY-MM-DD), widget: string }
+              - { name: title, label: Title, widget: string }
+              - { name: institution, label: Institution, widget: string }
+              - { name: category, label: Category, widget: string }
+              - { name: description, label: Description, widget: text }
+              - { name: sourceUrl, label: Source link, widget: string }
+              - { name: confirmed, label: Date confirmed on the institution's website, widget: boolean, default: false }
+
+      - name: sectors
+        label: Sectors
+        file: content/data/sectors.yml
+        fields:
+          - name: sectors
+            label: Sectors
+            widget: list
+            fields:
+              - { name: id, label: ID, widget: string }
+              - { name: name, label: Name, widget: string }
+              - { name: headlineSummary, label: Summary, widget: text }
+              - { name: gdpSharePercent, label: GDP share (%), widget: number, value_type: float, required: false }
+              - { name: formalEmployment, label: Employment, widget: string }
+              - { name: gdpSource, label: GDP source, widget: string }
+              - { name: gdpSourceUrl, label: GDP source link, widget: string }
+              - { name: lastPeriod, label: Data period, widget: string }
+              - { name: retrievalDate, label: Date checked (YYYY-MM-DD), widget: string }
+              - { name: keyRegulators, label: Key regulators, widget: list, field: { name: regulator, label: Regulator, widget: string } }
+              - { name: keyLegislation, label: Key legislation, widget: list, field: { name: law, label: Law, widget: string } }
+              - name: policyIssues
+                label: Policy issues
+                widget: list
+                fields:
+                  - { name: topic, label: Topic, widget: string }
+                  - { name: summary, label: Summary, widget: text }
+                  - { name: stakeholders, label: Stakeholders, widget: string }
+              - name: officialPublications
+                label: Official publications
+                widget: list
+                fields:
+                  - { name: title, label: Title, widget: string }
+                  - { name: publisher, label: Publisher, widget: string }
+                  - { name: url, label: Link, widget: string }
+                  - { name: date, label: Date, widget: string }
+                  - { name: type, label: Type, widget: string }
+
+  # ---------------------------------------------------------------- Site settings
+  - name: site
+    label: Site settings
+    files:
+      - name: site
+        label: Name, footer, contact and About page
+        file: content/site.yml
+        fields:
+          - { name: name, label: Site name, widget: string }
+          - { name: tagline, label: Tagline, widget: string }
+          - { name: footerBlurb, label: Footer description, widget: text }
+          - { name: contactEmail, label: Public contact email (leave empty to hide), widget: string, required: false }
+          - { name: disclaimer, label: Footer disclaimer, widget: text }
+          - { name: aboutTitle, label: About page heading, widget: string }
+          - { name: aboutIntro, label: About page introduction, widget: text }
+          - { name: aboutCard, label: About page side card text, widget: text }

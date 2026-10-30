@@ -1,0 +1,39 @@
+{
+  "name": "ospreyn",
+  "private": true,
+  "version": "1.0.0",
+  "type": "module",
+  "scripts": {
+    "dev": "vite --port=3000 --host=0.0.0.0",
+    "build": "vite build",
+    "preview": "vite preview",
+    "lint": "tsc --noEmit",
+    "data:update": "tsx scripts/fetch-data.ts",
+    "clean": "rm -rf dist",
+    "test": "tsx --test src/utils/*.test.ts",
+    "prepare:site": "tsx scripts/apply-manual.ts && node scripts/copy-cms.mjs",
+    "prebuild": "npm run prepare:site",
+    "predev": "npm run prepare:site"
+  },
+  "dependencies": {
+    "@tailwindcss/vite": "^4.3.3",
+    "@vitejs/plugin-react": "^6.1.1",
+    "lucide-react": "^0.546.0",
+    "react": "^19.0.1",
+    "react-dom": "^19.0.1",
+    "react-markdown": "^10.1.0",
+    "react-router-dom": "^7.18.5",
+    "recharts": "^3.10.1",
+    "vite": "^8.3.0",
+    "yaml": "^2.9.1"
+  },
+  "devDependencies": {
+    "@sveltia/cms": "^0.255.1",
+    "@types/node": "^22.14.0",
+    "@types/react": "^19.3.0",
+    "@types/react-dom": "^19.3.0",
+    "tailwindcss": "^4.3.3",
+    "tsx": "^4.21.0",
+    "typescript": "^7.0.2"
+  }
+}

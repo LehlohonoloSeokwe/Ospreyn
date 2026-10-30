@@ -1,0 +1,9 @@
+title: 'Unemployment: A Rising Official Rate'
+indicator: Official unemployment rate (Stats SA QLFS) and World Bank modelled series
+trend: Stats SA’s official unemployment rate was 33.6% in the second quarter of 2026, up from 32.7% in the first quarter and 31.4% in the fourth quarter of 2025. The number of unemployed people rose by 345 000 to 8.5 million, and the youth unemployment rate rose to 47.4%. The broader combined rate of unemployment and the potential labour force (LU3) was 43.8%. Stats SA reported an “expanded” rate until the second quarter of 2025 and now uses LU3 as the comparable broader measure.
+whyItMatters: Unemployment determines household incomes, the tax base and the demand for social support, and it is a direct measure of how widely the economy shares growth. The gap between the official rate and the broader LU3 rate shows how many people want work but are not counted as actively searching.
+whoIsAffected: Young work-seekers; households that depend on a single earner or on grants; National Treasury (a weaker tax base and higher demand for social spending); retailers and lenders (a smaller base of formal incomes).
+sources:
+- Stats SA, Quarterly Labour Force Survey Q2 2026 media release and presentation (P0211), 11 August 2026
+- 'SAnews, 11 August 2026: Official unemployment rate rises to 33.6%'
+- World Bank, indicator SL.UEM.TOTL.ZS (modelled ILO estimate)

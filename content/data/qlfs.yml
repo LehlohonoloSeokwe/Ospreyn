@@ -1,0 +1,62 @@
+meta:
+  name: Stats SA QLFS official unemployment rate (LU1)
+  unit: '%'
+  sourceName: Statistics South Africa (P0211 Quarterly Labour Force Survey)
+  sourceUrl: https://www.statssa.gov.za/?page_id=1854&PPN=P0211
+  definitionNote: Official unemployment rate (LU1) from the Quarterly Labour Force Survey. The broader LU3 measure was 43.8% in Q2 2026 and is not charted here.
+  lastReviewed: '2026-10-29'
+data:
+- period: 2022-Q1
+  value: 34.5
+  annotation: Official strict
+- period: 2022-Q2
+  value: 33.9
+  annotation: Official strict
+- period: 2022-Q3
+  value: 32.9
+  annotation: Official strict
+- period: 2022-Q4
+  value: 32.7
+  annotation: Official strict
+- period: 2023-Q1
+  value: 32.9
+  annotation: Official strict
+- period: 2023-Q2
+  value: 32.6
+  annotation: Official strict
+- period: 2023-Q3
+  value: 31.9
+  annotation: Official strict
+- period: 2023-Q4
+  value: 32.1
+  annotation: Official strict
+- period: 2024-Q1
+  value: 32.9
+  annotation: Official strict
+- period: 2024-Q2
+  value: 33.5
+  annotation: Official strict
+- period: 2024-Q3
+  value: 32.1
+  annotation: Official strict
+- period: 2024-Q4
+  value: 31.9
+  annotation: Official
+- period: 2025-Q1
+  value: 32.9
+  annotation: Official
+- period: 2025-Q2
+  value: 33.2
+  annotation: Official
+- period: 2025-Q3
+  value: 31.9
+  annotation: Official
+- period: 2025-Q4
+  value: 31.4
+  annotation: Official
+- period: 2026-Q1
+  value: 32.7
+  annotation: Official
+- period: 2026-Q2
+  value: 33.6
+  annotation: Official; latest release, 11 Aug 2026

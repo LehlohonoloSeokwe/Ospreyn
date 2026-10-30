@@ -1,0 +1,8 @@
+title: 'Government Debt: Rising Interest Burden'
+indicator: Central government debt (% of GDP, World Bank series)
+trend: On the World Bank measure, central government debt was 64.6% of GDP in 2019, 75.7% in 2020, 79.4% in 2023 and 82.8% in 2024. This measure differs from the debt figures National Treasury publishes in the Budget Review, so use Treasury’s own tables when quoting the official debt path.
+whyItMatters: A higher debt stock means more of each year’s revenue goes to interest, leaving less for services and investment, and it makes the government more sensitive to higher interest rates and weaker growth. The October 2026 Medium-Term Budget Policy Statement contains the latest official debt projections.
+whoIsAffected: Government departments and municipalities (spending competes with interest costs); investors in government bonds, including banks and pension funds; taxpayers.
+sources:
+- World Bank, indicator GC.DOD.TOTL.GD.ZS (South Africa)
+- National Treasury, 2026 Medium-Term Budget Policy Statement (treasury.gov.za)

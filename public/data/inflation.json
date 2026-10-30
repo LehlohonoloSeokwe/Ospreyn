@@ -1,0 +1,335 @@
+{
+  "id": "inflation",
+  "indicatorName": "Consumer Price Index (CPI) Inflation",
+  "shortName": "Headline CPI",
+  "unit": "%",
+  "frequency": "Annual",
+  "sourceName": "World Bank / Statistics South Africa",
+  "sourceUrl": "https://data.worldbank.org/indicator/FP.CPI.TOTL.ZG?locations=ZA",
+  "retrievalDate": "2026-10-29",
+  "lastPeriod": "2025",
+  "latestValue": 3.21,
+  "previousValue": 4.36,
+  "changeAbsolute": -1.15,
+  "changePercentage": -26.38,
+  "qualityStatus": "VERIFIED",
+  "directionFavorable": "down",
+  "seriesCode": "FP.CPI.TOTL.ZG",
+  "definitionNote": "Inflation as measured by the consumer price index reflects the annual percentage change in the cost to the average consumer of acquiring a basket of goods and services.",
+  "methodologyDetail": "Since 12 November 2025 the SARB target is 3% with a 1 percentage point tolerance band (2% to 4%). Before then it was a 3% to 6% range, with 4.5% preferred in recent years.",
+  "data": [
+    {
+      "period": "1966",
+      "value": 3.49
+    },
+    {
+      "period": "1967",
+      "value": 3.54
+    },
+    {
+      "period": "1968",
+      "value": 1.99
+    },
+    {
+      "period": "1969",
+      "value": 3.24
+    },
+    {
+      "period": "1970",
+      "value": 4.99
+    },
+    {
+      "period": "1971",
+      "value": 5.96
+    },
+    {
+      "period": "1972",
+      "value": 6.43
+    },
+    {
+      "period": "1973",
+      "value": 9.43
+    },
+    {
+      "period": "1974",
+      "value": 11.72
+    },
+    {
+      "period": "1975",
+      "value": 13.43
+    },
+    {
+      "period": "1976",
+      "value": 11.02
+    },
+    {
+      "period": "1977",
+      "value": 11.15
+    },
+    {
+      "period": "1978",
+      "value": 11.14
+    },
+    {
+      "period": "1979",
+      "value": 13.29
+    },
+    {
+      "period": "1980",
+      "value": 13.66
+    },
+    {
+      "period": "1981",
+      "value": 15.25
+    },
+    {
+      "period": "1982",
+      "value": 14.64
+    },
+    {
+      "period": "1983",
+      "value": 12.3
+    },
+    {
+      "period": "1984",
+      "value": 11.53
+    },
+    {
+      "period": "1985",
+      "value": 16.29
+    },
+    {
+      "period": "1986",
+      "value": 18.65
+    },
+    {
+      "period": "1987",
+      "value": 16.16
+    },
+    {
+      "period": "1988",
+      "value": 12.78
+    },
+    {
+      "period": "1989",
+      "value": 14.73
+    },
+    {
+      "period": "1990",
+      "value": 14.32
+    },
+    {
+      "period": "1991",
+      "value": 15.33
+    },
+    {
+      "period": "1992",
+      "value": 13.87
+    },
+    {
+      "period": "1993",
+      "value": 9.72
+    },
+    {
+      "period": "1994",
+      "value": 8.94
+    },
+    {
+      "period": "1995",
+      "value": 8.68
+    },
+    {
+      "period": "1996",
+      "value": 7.35
+    },
+    {
+      "period": "1997",
+      "value": 8.6
+    },
+    {
+      "period": "1998",
+      "value": 6.88
+    },
+    {
+      "period": "1999",
+      "value": 5.18
+    },
+    {
+      "period": "2000",
+      "value": 5.34
+    },
+    {
+      "period": "2001",
+      "value": 5.7
+    },
+    {
+      "period": "2002",
+      "value": 9.49
+    },
+    {
+      "period": "2003",
+      "value": 5.68
+    },
+    {
+      "period": "2004",
+      "value": -0.69
+    },
+    {
+      "period": "2005",
+      "value": 2.06
+    },
+    {
+      "period": "2006",
+      "value": 3.24
+    },
+    {
+      "period": "2007",
+      "value": 6.18
+    },
+    {
+      "period": "2008",
+      "value": 9.91,
+      "annotation": "Oil & Food Price Spike (11.5%)"
+    },
+    {
+      "period": "2009",
+      "value": 7.24
+    },
+    {
+      "period": "2010",
+      "value": 4.07
+    },
+    {
+      "period": "2011",
+      "value": 5
+    },
+    {
+      "period": "2012",
+      "value": 5.74
+    },
+    {
+      "period": "2013",
+      "value": 5.78
+    },
+    {
+      "period": "2014",
+      "value": 6.13
+    },
+    {
+      "period": "2015",
+      "value": 4.52
+    },
+    {
+      "period": "2016",
+      "value": 6.6
+    },
+    {
+      "period": "2017",
+      "value": 5.19
+    },
+    {
+      "period": "2018",
+      "value": 4.51
+    },
+    {
+      "period": "2019",
+      "value": 4.1
+    },
+    {
+      "period": "2020",
+      "value": 3.23,
+      "annotation": "COVID Demand Slump (3.2%)"
+    },
+    {
+      "period": "2021",
+      "value": 4.62
+    },
+    {
+      "period": "2022",
+      "value": 7.04,
+      "annotation": "Global Supply Chain & Fuel Shock (6.9%)"
+    },
+    {
+      "period": "2023",
+      "value": 6.08
+    },
+    {
+      "period": "2024",
+      "value": 4.36,
+      "annotation": "Disinflation toward the Reserve Bank target"
+    },
+    {
+      "period": "2025",
+      "value": 3.21
+    }
+  ],
+  "secondarySeries": {
+    "name": "Stats SA Monthly CPI Baseline (2024-2025 Trend)",
+    "unit": "% YoY",
+    "sourceName": "Statistics South Africa (Statistical Release P0141)",
+    "sourceUrl": "https://www.statssa.gov.za/?page_id=1854&PPN=P0141",
+    "definitionNote": "Headline urban CPI calculated on consumer expenditure survey weights.",
+    "data": [
+      {
+        "period": "2023-10",
+        "value": 5.9
+      },
+      {
+        "period": "2023-11",
+        "value": 5.5
+      },
+      {
+        "period": "2023-12",
+        "value": 5.1
+      },
+      {
+        "period": "2024-01",
+        "value": 5.3
+      },
+      {
+        "period": "2024-02",
+        "value": 5.6
+      },
+      {
+        "period": "2024-03",
+        "value": 5.3
+      },
+      {
+        "period": "2024-04",
+        "value": 5.2
+      },
+      {
+        "period": "2024-05",
+        "value": 5.2
+      },
+      {
+        "period": "2024-06",
+        "value": 5.1
+      },
+      {
+        "period": "2024-07",
+        "value": 4.6
+      },
+      {
+        "period": "2024-08",
+        "value": 4.4
+      },
+      {
+        "period": "2024-09",
+        "value": 3.8
+      },
+      {
+        "period": "2024-10",
+        "value": 2.8
+      },
+      {
+        "period": "2024-11",
+        "value": 2.9
+      },
+      {
+        "period": "2024-12",
+        "value": 3
+      }
+    ]
+  }
+}

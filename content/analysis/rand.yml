@@ -1,0 +1,8 @@
+title: 'The Rand: Import Costs and Export Revenue'
+indicator: Official exchange rate, rand per US dollar (annual average, World Bank series)
+trend: The annual average exchange rate was R16.36 per US dollar in 2022, R18.45 in 2023, R18.33 in 2024 and R17.89 in 2025. These are annual averages and hide large swings within each year; use SARB daily rates for short-term movements.
+whyItMatters: South Africa imports fuel, machinery and technology, so a weaker rand raises import costs and can feed into inflation, while a stronger rand lowers them. Exporters, especially of commodities priced in dollars, are affected in the opposite direction.
+whoIsAffected: Importers and consumers (fuel and imported goods); exporters and miners (rand revenue from dollar sales); offshore investors in rand assets; companies with dollar-denominated debt.
+sources:
+- World Bank, indicator PA.NUS.FCRF (South Africa)
+- SARB, historical exchange rates (resbank.co.za)
