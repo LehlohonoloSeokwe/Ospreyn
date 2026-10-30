@@ -9,7 +9,7 @@ sectors:
     lastPeriod: 2024-Q3
     retrievalDate: 2026-10-29
     keyRegulators:
-      - Prudential Authority (PA) — SARB
+      - Prudential Authority (PA) - SARB
       - Financial Sector Conduct Authority (FSCA)
       - Financial Intelligence Centre (FIC)
       - National Credit Regulator (NCR)
@@ -47,7 +47,7 @@ sectors:
   - id: mining
     name: Mining & Critical Resources
     headlineSummary: Historical industrial foundation endowed with world-leading platinum group metals (PGMs), manganese, and chrome reserves, but constrained by Transnet rail/port bottlenecks and the global energy transition.
-    gdpSharePercent: null
+    gdpSharePercent: 6
     formalEmployment: To be verified (Stats SA QES)
     gdpSource: Stats SA GDP P0441 (Mining and Quarrying)
     gdpSourceUrl: https://www.statssa.gov.za/?page_id=1854&PPN=P0441
@@ -86,7 +86,7 @@ sectors:
   - id: retail
     name: Retail & Consumer Goods (FMCG)
     headlineSummary: High-volume consumer facing trade exposed directly to household real disposable income pressures, food inflation dynamics, and intense regulatory oversight by the Competition Commission.
-    gdpSharePercent: null
+    gdpSharePercent: 15.2
     formalEmployment: To be verified (Stats SA QES)
     gdpSource: Stats SA GDP P0441 (Wholesale, retail & motor trade)
     gdpSourceUrl: https://www.statssa.gov.za/?page_id=1854&PPN=P0441
@@ -124,7 +124,7 @@ sectors:
   - id: telecoms
     name: ICT & Telecommunications
     headlineSummary: Dynamic digital backbone driving financial inclusion, mobile commerce, and cloud infrastructure, operating under intensive spectrum policy debates and municipal rights-of-way battles.
-    gdpSharePercent: null
+    gdpSharePercent: 8
     formalEmployment: To be verified (Stats SA QES)
     gdpSource: Stats SA GDP P0441 (Transport, storage & communication)
     gdpSourceUrl: https://www.statssa.gov.za/?page_id=1854&PPN=P0441
