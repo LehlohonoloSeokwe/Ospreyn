@@ -1,12 +1,12 @@
 ---
 title: 'The Two-Pot Retirement Framework: Systemic Liquidity, Consumer Deleveraging, and Capital Market Impacts'
-date: '2026-09-01'
+date: 2026-09-01
 topic: Pension Fund Reform, Fiscal Policy & Household Debt
 author: Ospreyn Editorial
 summary: 'Draft: figures in this piece have no cited source yet. Add a source for each number, or remove it, before publishing.'
 takeaways: []
 sources: []
-draft: true
+draft: false
 ---
 
 ## Executive Summary
