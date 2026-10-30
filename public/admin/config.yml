@@ -2,7 +2,7 @@
 # BEFORE FIRST USE: change `repo` below to your GitHub "owner/repository".
 backend:
   name: github
-  repo: YOUR-GITHUB-USERNAME/YOUR-REPOSITORY
+  repo: LehlohonoloSeokwe/Ospreyn
   branch: main
 
 site_url: https://ospreyn.com
