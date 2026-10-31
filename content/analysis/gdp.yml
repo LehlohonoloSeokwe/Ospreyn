@@ -1,8 +1,8 @@
 title: 'Real GDP Growth: Weak Output and a Cautious Outlook'
 indicator: Real GDP growth (annual %, World Bank series)
-trend: Real GDP fell 6.2% in 2020, rebounded 4.9% in 2021 and grew 2.1% in 2022. Growth then slowed to 0.8% in 2023, 0.5% in 2024 and 1.1% in 2025. In June 2026 the Finance Minister said National Treasury was reassessing its growth projections ahead of the October mid-term budget, citing geopolitical tensions and higher oil prices.
+trend: Real GDP fell 6.2% in 2020, rebounded 4.9% in 2021, and grew 2.1% in 2022. Growth then slowed to 0.8% in 2023, 0.5% in 2024, and 1.1% in 2025, though Stats SA's October 2026 rebasing exercise revised the 2025 figure down to 0.9%. In June 2026, the Finance Minister said National Treasury was reassessing its growth projections ahead of the October mid-term budget, citing geopolitical tensions and higher oil prices.
 whyItMatters: Growth drives tax revenue, so it shapes how easily the state can stabilise its debt, fund services and absorb new workers. With growth near 1% a year, the economy adds little output beyond what a growing population needs, and the budget has to be balanced through higher revenue or lower spending. Whether output per person is rising depends on how growth compares with population growth (Stats SA mid-year population estimates).
 whoIsAffected: Banks and lenders (weak growth limits demand for credit and raises the risk of loan losses); work-seekers (low growth makes it harder for the economy to create jobs); National Treasury (slower growth makes debt harder to stabilise).
 sources:
-- World Bank, indicator NY.GDP.MKTP.KD.ZG (South Africa)
-- 'Business Report, 18 June 2026: Treasury to review SA growth forecast ahead of the MTBPS (businessreport.co.za)'
+  - World Bank, indicator NY.GDP.MKTP.KD.ZG (South Africa)
+  - 'Business Report, 18 June 2026: Treasury to review SA growth forecast ahead of the MTBPS (businessreport.co.za)'
