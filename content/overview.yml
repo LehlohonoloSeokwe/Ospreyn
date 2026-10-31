@@ -2,11 +2,11 @@ updated: October 2026
 headline: 'Where the Economy Stands: October 2026'
 summary: South Africa enters the final quarter of 2026 with weak growth, a rising official unemployment rate and a Reserve Bank that has moved from cutting to raising interest rates. The figures below come from the datasets on this site and from official releases; each point lists where to check it.
 points:
-- title: Interest rates turned up again
-  text: 'The repo rate fell to 6.75% by November 2025, then rose to 7.00% in May and 7.25% in September 2026 (prime 10.75%). Source: SARB Monetary Policy Committee statements.'
-- title: Slow growth and a fiscal update
-  text: Real GDP grew 1.1% in 2025 (World Bank series). Treasury said in June it was reassessing growth projections because of geopolitical tensions and oil prices, and the mid-term budget was tabled on 21 October 2026. Read the MTBPS tables for official debt and deficit figures.
-- title: Unemployment is rising
-  text: 'Stats SA’s official rate was 33.6% in Q2 2026, up from 32.7% in Q1 and 31.4% in Q4 2025; 8.5 million people were unemployed. The broader LU3 measure was 43.8%. Source: Stats SA QLFS, 11 August 2026.'
-- title: Financial integrity after the grey list
-  text: The FATF removed South Africa from its grey list on 24 October 2025. Monitoring continues, and South Africa’s next FATF evaluation begins in 2026. See the policy brief for detail.
+  - title: Interest rates turned up again
+    text: 'The repo rate fell to 6.75% by November 2025, then rose to 7.00% in May and 7.25% in September 2026 (prime 10.75%). Source: SARB Monetary Policy Committee statements.'
+  - title: Slow growth and a fiscal update
+    text: Real GDP fell 6.2% in 2020, rebounded 4.9% in 2021, and grew 2.1% in 2022. Growth then slowed to 0.8% in 2023, 0.5% in 2024, and 1.1% in 2025 according to the World Bank series, though Stats SA's October 2026 rebasing exercise revised the 2025 domestic figure down to 0.9%. In June 2026, the Finance Minister noted National Treasury was reassessing its growth projections due to geopolitical tensions and oil prices. When the MTBPS was tabled on 21 October 2026, Treasury revised 2026 GDP growth down to 1.2% (from 1.6% projected in February). The statement confirmed that gross government debt stabilized at 78.4% of GDP in 2025/26 (down from the 78.9% previously projected) and is expected to decline to 78.2% in 2026/27. Meanwhile, the main budget deficit is projected to narrow to 3.9% of GDP for 2026/27, further reaching 2.5% over the medium term.
+  - title: Unemployment is rising
+    text: 'Stats SA’s official rate was 33.6% in Q2 2026, up from 32.7% in Q1 and 31.4% in Q4 2025; 8.5 million people were unemployed. The broader LU3 measure was 43.8%. Source: Stats SA QLFS, 11 August 2026.'
+  - title: Financial integrity after the grey list
+    text: The FATF removed South Africa from its grey list on 24 October 2025. Monitoring continues, and South Africa’s next FATF evaluation begins in 2026. See the policy brief for detail.
