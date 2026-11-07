@@ -1,5 +1,5 @@
 ---
-title: 'Defence on a Shoestring: Why Treasury’s Mid-Term Budget Leaves the SANDF Short'
+title: 'Defence on a Shoestring: Why Treasury’s Mid-Term Budget Leaves the SANDF Short.'
 date: 2026-10-30
 topic: South African defence funding in the 2026 Medium-Term Budget Policy Statement (MTBPS), set against Treasury’s priorities for state-owned entities
 author: Ospreyn Editorial
