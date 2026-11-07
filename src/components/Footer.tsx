@@ -103,10 +103,10 @@ export const Footer: React.FC = () => {
                 </Link>
               </li>
               <li>
-                <a href="/rss.xml" className="hover:text-slate-900 dark:hover:text-slate-200 transition-colors flex items-center gap-1.5">
+                <Link to="/feed" className="hover:text-slate-900 dark:hover:text-slate-200 transition-colors flex items-center gap-1.5">
                   <Rss size={13} />
                   <span>RSS feed</span>
-                </a>
+                </Link>
               </li>
               <li>
                 <a href="/admin/" className="hover:text-slate-900 dark:hover:text-slate-200 transition-colors flex items-center gap-1.5">

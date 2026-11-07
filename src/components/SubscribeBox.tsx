@@ -4,6 +4,7 @@
  */
 
 import React from 'react';
+import { Link } from 'react-router-dom';
 import { Mail, Rss } from 'lucide-react';
 import { SITE } from '../content/site';
 
@@ -34,9 +35,9 @@ export const SubscribeBox: React.FC = () => (
           </button>
         </form>
       )}
-      <a href="/rss.xml" className="inline-flex h-9 items-center gap-1.5 rounded-md border border-slate-300 dark:border-slate-700 px-3 text-sm text-slate-700 dark:text-slate-200 hover:bg-slate-50 dark:hover:bg-slate-800">
+      <Link to="/feed" className="inline-flex h-9 items-center gap-1.5 rounded-md border border-slate-300 dark:border-slate-700 px-3 text-sm text-slate-700 dark:text-slate-200 hover:bg-slate-50 dark:hover:bg-slate-800">
         <Rss size={14} aria-hidden="true" /> RSS feed
-      </a>
+      </Link>
     </div>
   </section>
 );
