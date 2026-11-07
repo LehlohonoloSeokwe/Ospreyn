@@ -615,6 +615,7 @@ Manual series do not update when you run \`npm run data:update\`. After each MPC
 5. **Mid-term budget**: the MTBPS was tabled on 21 October 2026. Update debt, deficit and growth figures from the document itself.
 6. **Drafts**: the two briefs in /content/drafts contain figures with no sources. Do not publish until each is sourced.
 7. **Quality claims**: accessibility (WCAG) and Lighthouse scores have not been tested. Run Lighthouse and an accessibility checker before making any claim.
+8. **Live Reserve Bank strip (Overview page)**: the rates come straight from the SARB Web API in the visitor's browser. Open the live site once, check each figure against the SARB rates page, and confirm all four tiles appear. If one is missing, the SARB response shape or series code changed; see \`src/utils/sarbLive.ts\`.
 `;
 
   fs.writeFileSync(VERIFY_FILE, verifyContent, 'utf-8');

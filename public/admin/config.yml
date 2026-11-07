@@ -2,7 +2,7 @@
 # BEFORE FIRST USE: change `repo` below to your GitHub "owner/repository".
 backend:
   name: github
-  repo: LehlohonoloSeokwe/Ospreyn
+  repo: YOUR-GITHUB-USERNAME/YOUR-REPOSITORY
   branch: main
 
 site_url: https://ospreyn.com
@@ -72,6 +72,13 @@ collections:
           - { name: updated, label: "Updated (for example: October 2026)", widget: string }
           - { name: headline, label: Headline, widget: string }
           - { name: summary, label: Opening paragraph, widget: text }
+          - name: weekNote
+            label: What changed this week (optional, hidden automatically after 4 weeks)
+            widget: object
+            required: false
+            fields:
+              - { name: date, label: Date (YYYY-MM-DD), widget: string, required: false }
+              - { name: text, label: One or two sentences on what changed, widget: text, required: false, hint: "Cite the source for any figure. Leave empty to show nothing." }
           - name: points
             label: Key points (shown in order)
             widget: list
@@ -222,3 +229,36 @@ collections:
           - { name: aboutTitle, label: About page heading, widget: string }
           - { name: aboutIntro, label: About page introduction, widget: text }
           - { name: aboutCard, label: About page side card text, widget: text }
+          - { name: siteUrl, label: Web address (used in the RSS feed), widget: string, required: false }
+          - { name: subscribeUrl, label: "Email sign-up form address (leave empty to show only the RSS link)", widget: string, required: false, hint: "For Buttondown: https://buttondown.com/api/emails/embed-subscribe/YOUR-USERNAME" }
+
+  # ---------------------------------------------------------------- Glossary and corrections
+  - name: reference
+    label: Glossary and corrections
+    files:
+      - name: glossary
+        label: Glossary (words that get a tooltip)
+        file: content/glossary.yml
+        fields:
+          - name: terms
+            label: Terms
+            widget: list
+            fields:
+              - { name: id, label: ID (lowercase, no spaces), widget: string }
+              - { name: term, label: Term, widget: string }
+              - { name: aliases, label: Other ways it is written, widget: list, required: false, field: { name: alias, label: Alias, widget: string } }
+              - { name: definition, label: Plain-language definition, widget: text }
+      - name: corrections
+        label: Corrections log
+        file: content/corrections.yml
+        fields:
+          - name: items
+            label: Corrections (newest first)
+            widget: list
+            required: false
+            fields:
+              - { name: date, label: Date (YYYY-MM-DD), widget: string }
+              - { name: where, label: Where it appeared, widget: string }
+              - { name: was, label: What it said, widget: text }
+              - { name: now, label: What it says now, widget: text }
+              - { name: reason, label: Why it changed, widget: text, required: false }

@@ -5,7 +5,7 @@
 
 import React from 'react';
 import { Link } from 'react-router-dom';
-import { Mail, FileText, ShieldCheck, Lock } from 'lucide-react';
+import { Mail, FileText, ShieldCheck, Lock, Rss } from 'lucide-react';
 import { SITE } from '../content/site';
 
 export const Footer: React.FC = () => {
@@ -95,6 +95,18 @@ export const Footer: React.FC = () => {
                   <ShieldCheck size={13} />
                   <span>VERIFY.md Register</span>
                 </Link>
+              </li>
+              <li>
+                <Link to="/corrections" className="hover:text-slate-900 dark:hover:text-slate-200 transition-colors flex items-center gap-1.5">
+                  <FileText size={13} />
+                  <span>Corrections & Methods</span>
+                </Link>
+              </li>
+              <li>
+                <a href="/rss.xml" className="hover:text-slate-900 dark:hover:text-slate-200 transition-colors flex items-center gap-1.5">
+                  <Rss size={13} />
+                  <span>RSS feed</span>
+                </a>
               </li>
               <li>
                 <a href="/admin/" className="hover:text-slate-900 dark:hover:text-slate-200 transition-colors flex items-center gap-1.5">

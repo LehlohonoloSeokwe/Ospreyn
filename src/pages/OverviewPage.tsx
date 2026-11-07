@@ -7,6 +7,10 @@ import React, { useEffect, useState } from 'react';
 import { Link } from 'react-router-dom';
 import { ArrowRight, BarChart3, Calendar, FileText, CheckCircle2, TrendingUp, AlertCircle } from 'lucide-react';
 import { MetricCard, MetricCardData } from '../components/MetricCard';
+import { NowBanner } from '../components/NowBanner';
+import { StaleNotice } from '../components/StaleNotice';
+import { GlossaryText } from '../components/GlossaryText';
+import { daysBetween, todaySA } from '../utils/now';
 import { parse } from 'yaml';
 import overviewRaw from '../../content/overview.yml?raw';
 
@@ -15,7 +19,11 @@ interface OverviewContent {
   headline: string;
   summary: string;
   points: { title: string; text: string }[];
+  /** Optional short note, written in the admin page, on what changed this week. */
+  weekNote?: { date?: string; text?: string };
 }
+/** A weekly note older than this is hidden rather than shown as if it were current. */
+const WEEK_NOTE_MAX_AGE_DAYS = 28;
 const OVERVIEW = parse(overviewRaw) as OverviewContent;
 const DOT_COLOURS = [
   'bg-emerald-600 dark:bg-emerald-400',
@@ -45,6 +53,16 @@ export const OverviewPage: React.FC = () => {
         setLoading(false);
       });
   }, []);
+
+  const weekNote = (() => {
+    const text = OVERVIEW.weekNote?.text?.trim();
+    const date = OVERVIEW.weekNote?.date ? String(OVERVIEW.weekNote.date).slice(0, 10) : '';
+    if (!text || !date) return null;
+    const age = daysBetween(date, todaySA());
+    if (Number.isNaN(age) || age > WEEK_NOTE_MAX_AGE_DAYS || age < -1) return null;
+    const dateLabel = new Date(`${date}T00:00:00Z`).toLocaleDateString('en-ZA', { day: 'numeric', month: 'long', year: 'numeric', timeZone: 'UTC' });
+    return { text, dateLabel };
+  })();
 
   return (
     <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-8 sm:py-12">
@@ -80,6 +98,22 @@ export const OverviewPage: React.FC = () => {
           </Link>
         </div>
       </section>
+
+      {/* What matters now: live rates, currencies, markets, countdowns, latest figures, newest brief */}
+      <NowBanner metrics={metrics} />
+
+      {weekNote && (
+        <aside className="mb-10 rounded-lg border border-emerald-200 dark:border-emerald-900 bg-emerald-50/60 dark:bg-emerald-950/20 px-4 py-3" aria-label="What changed this week">
+          <p className="text-xs font-mono uppercase tracking-wider text-emerald-800 dark:text-emerald-400 font-semibold">
+            What changed this week · {weekNote.dateLabel}
+          </p>
+          <p className="mt-1 text-sm text-slate-800 dark:text-slate-200 leading-relaxed">
+            <GlossaryText text={weekNote.text} />
+          </p>
+        </aside>
+      )}
+
+      <StaleNotice metrics={metrics} />
 
       {/* 6 Core Metric Cards Grid */}
       <section className="mb-14" aria-labelledby="core-indicators-heading">
@@ -125,7 +159,7 @@ export const OverviewPage: React.FC = () => {
 
         <div className="prose dark:prose-invert max-w-none text-slate-700 dark:text-slate-300 font-sans text-sm sm:text-base leading-relaxed space-y-4">
           <p>
-            {OVERVIEW.summary}
+            <GlossaryText text={OVERVIEW.summary} />
           </p>
 
           <div className="grid grid-cols-1 md:grid-cols-2 gap-6 my-6 pt-4 border-t border-slate-100 dark:border-slate-800">
@@ -135,7 +169,7 @@ export const OverviewPage: React.FC = () => {
                   <span className={`w-2 h-2 rounded-full ${DOT_COLOURS[idx % DOT_COLOURS.length]}`} />
                   {idx + 1}. {pt.title}
                 </h3>
-                <p className="text-xs sm:text-sm text-slate-600 dark:text-slate-400 leading-normal">{pt.text}</p>
+                <p className="text-xs sm:text-sm text-slate-600 dark:text-slate-400 leading-normal"><GlossaryText text={pt.text} /></p>
               </div>
             ))}
           </div>

@@ -15,6 +15,7 @@ import { CalendarPage } from './pages/CalendarPage';
 import { BriefsPage } from './pages/BriefsPage';
 import { AboutPage } from './pages/AboutPage';
 import { VerifyRegistryPage } from './pages/VerifyRegistryPage';
+import { CorrectionsPage } from './pages/CorrectionsPage';
 
 function ScrollToTop() {
   const { pathname } = useLocation();
@@ -43,6 +44,7 @@ export default function App() {
             <Route path="/briefs" element={<BriefsPage />} />
             <Route path="/about" element={<AboutPage />} />
             <Route path="/verify" element={<VerifyRegistryPage />} />
+            <Route path="/corrections" element={<CorrectionsPage />} />
             {/* Catch-all route returns to Overview */}
             <Route path="*" element={<OverviewPage />} />
           </Routes>

@@ -10,6 +10,8 @@ export interface SiteSettings {
   aboutTitle: string;
   aboutIntro: string;
   aboutCard: string;
+  siteUrl: string;
+  subscribeUrl: string;
 }
 
 /** content/site.yml is editable in the admin page under "Site settings". */
@@ -25,6 +27,8 @@ export function parseSite(text: string): SiteSettings {
     aboutTitle: s(d.aboutTitle, 'About'),
     aboutIntro: s(d.aboutIntro),
     aboutCard: s(d.aboutCard),
+    siteUrl: s(d.siteUrl, 'https://ospreyn.com'),
+    subscribeUrl: s(d.subscribeUrl),
   };
 }
 

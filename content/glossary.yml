@@ -1,0 +1,53 @@
+terms:
+- id: repo-rate
+  term: Repo rate
+  aliases: [repurchase rate, repo]
+  definition: The interest rate at which the Reserve Bank lends money to commercial banks. It is the main policy rate, and changes to it feed through to the prime rate and to the cost of loans and bonds.
+- id: prime-rate
+  term: Prime lending rate
+  aliases: [prime rate, prime]
+  definition: The benchmark rate banks use for lending to their best customers. In South Africa it is conventionally the repo rate plus 3.5 percentage points.
+- id: zaronia
+  term: ZARONIA
+  aliases: []
+  definition: The South African Rand Overnight Index Average, an overnight interest rate worked out from actual rand transactions between banks. It is being phased in to replace JIBAR as a benchmark.
+- id: mpc
+  term: Monetary Policy Committee
+  aliases: [MPC]
+  definition: The Reserve Bank group that decides the repo rate. It meets about six times a year and announces each decision on the last day of its meeting.
+- id: cpi
+  term: Consumer Price Index
+  aliases: [CPI, headline CPI]
+  definition: Statistics South Africa's measure of how the prices of the goods and services households buy change over time. Headline CPI is the figure most often quoted as the inflation rate.
+- id: expanded-unemployment
+  term: Expanded unemployment
+  aliases: [LU3]
+  definition: A broader measure of unemployment than the official rate. It also counts people who want to work but are not actively looking.
+- id: qlfs
+  term: Quarterly Labour Force Survey
+  aliases: [QLFS]
+  definition: Statistics South Africa's household survey that produces the official unemployment rate each quarter.
+- id: mtbps
+  term: Medium-Term Budget Policy Statement
+  aliases: [MTBPS, mid-term budget]
+  definition: National Treasury's mid-year update to the budget, setting out the outlook for growth, spending, borrowing and debt.
+- id: gdp
+  term: Gross domestic product
+  aliases: [GDP]
+  definition: The total value of goods and services produced in the economy over a period. Growth is usually quoted as the change in real GDP, which removes the effect of price rises.
+- id: basis-point
+  term: Basis point
+  aliases: [basis points]
+  definition: One hundredth of a percentage point. A 25 basis point cut takes the repo rate from, for example, 7.25% to 7.00%.
+- id: bond-yield
+  term: Bond yield
+  aliases: [yield]
+  definition: The return an investor earns from holding a bond. It rises when the bond's price falls, and the government bond yield is a rough guide to what it costs the state to borrow.
+- id: brent
+  term: Brent crude
+  aliases: [Brent]
+  definition: The international benchmark price for oil, quoted in US dollars per barrel. It matters for South Africa's fuel price and import bill.
+- id: all-share
+  term: JSE All Share index
+  aliases: [All Share, ALSI]
+  definition: An index that tracks the broad market of shares listed on the Johannesburg Stock Exchange.

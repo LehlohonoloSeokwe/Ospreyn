@@ -8,6 +8,7 @@ import { BookOpen, Calendar, Clock, ChevronDown, ChevronUp, Share2, Check, Arrow
 import ReactMarkdown, { Components } from 'react-markdown';
 import { PolicyBrief } from '../types';
 import { PUBLISHED_ARTICLES, readMinutes } from '../content/articles';
+import { SubscribeBox } from '../components/SubscribeBox';
 
 const BRIEFS_DATA: PolicyBrief[] = PUBLISHED_ARTICLES.map((a) => ({
   id: a.slug,
@@ -69,6 +70,8 @@ export const BriefsPage: React.FC = () => {
           Policy briefs and commentary on South African financial regulation and the economy. Written for decision-makers in commercial banking, asset management, multilateral bodies, and regulatory agencies.
         </p>
       </div>
+
+      <div className="mb-8 max-w-2xl"><SubscribeBox /></div>
 
       {BRIEFS_DATA.length === 0 && (
         <p className="text-sm text-slate-600 dark:text-slate-400">No articles have been published yet.</p>

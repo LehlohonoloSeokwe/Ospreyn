@@ -11,9 +11,10 @@
     "data:update": "tsx scripts/fetch-data.ts",
     "clean": "rm -rf dist",
     "test": "tsx --test src/utils/*.test.ts",
-    "prepare:site": "tsx scripts/apply-manual.ts && node scripts/copy-cms.mjs",
+    "prepare:site": "tsx scripts/apply-manual.ts && tsx scripts/build-rss.ts && node scripts/copy-cms.mjs",
     "prebuild": "npm run prepare:site",
-    "predev": "npm run prepare:site"
+    "predev": "npm run prepare:site",
+    "rates:snapshot": "tsx scripts/snapshot-rates.ts"
   },
   "dependencies": {
     "@tailwindcss/vite": "^4.3.3",

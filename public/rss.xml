@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>Ospreyn: South African Economy &amp; Regulation</title>
+    <link>https://ospreyn.com</link>
+    <description>Independent analysis of the South African economy and its regulators. Every figure traces to a cited public source, and anything unchecked is flagged in the verification register.</description>
+    <language>en-ZA</language>
+    <lastBuildDate>Sat, 07 Nov 2026 17:26:09 GMT</lastBuildDate>
+    <atom:link href="https://ospreyn.com/rss.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>After the Grey List: What South Africa’s FATF Exit Changes, and What Comes Next</title>
+      <link>https://ospreyn.com/briefs#after-the-fatf-grey-list</link>
+      <guid isPermaLink="true">https://ospreyn.com/briefs#after-the-fatf-grey-list</guid>
+      <pubDate>Thu, 29 Oct 2026 08:00:00 GMT</pubDate>
+      <category>Financial Regulation &amp; AML/CFT</category>
+      <description>The Financial Action Task Force removed South Africa from its grey list on 24 October 2025, about 32 months after it was listed. This brief sets out what the exit changes, what it does not, and why the next FATF evaluation, which begins in 2026, matters more than the delisting itself.</description>
+    </item>
+  </channel>
+</rss>

@@ -99,8 +99,7 @@ export const AboutPage: React.FC = () => {
                 <strong>Separation of Data and Analysis:</strong> Quantitative series are retrieved directly via <code className="text-xs font-mono bg-slate-100 dark:bg-slate-800 px-1.5 py-0.5 rounded">/scripts/fetch-data.ts</code> into normalized JSON schemas. All policy conclusions, risk assessments, and executive summaries are authored as distinct qualitative commentary in <code className="text-xs font-mono bg-slate-100 dark:bg-slate-800 px-1.5 py-0.5 rounded">/content/*.md</code>.
               </p>
               <p>
-                <strong>No Scraped Market Data:</strong> To respect intellectual property and data provider terms of use, Ospreyn does not scrape live JSE stock prices, commercial exchange feeds, or proprietary private index data. All metrics are published under open government and multilateral public data licenses.
-              </p>
+                <strong>No scraped market data:</strong> Ospreyn does not scrape websites, commercial exchange feeds or proprietary index data. The only live market figures shown (rates, currencies, precious metals, oil and the JSE All Share index, where available) are read from the Reserve Bank’s own public Web API, labelled with the Reserve Bank’s date and shown as published, not as tick-by-tick prices. All other metrics come from open government and multilateral public data sources.</p>
             </div>
           </section>
 

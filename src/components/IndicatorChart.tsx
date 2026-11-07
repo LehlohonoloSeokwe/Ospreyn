@@ -3,7 +3,7 @@
  * SPDX-License-Identifier: Apache-2.0
  */
 
-import React, { useState, useMemo } from 'react';
+import React, { useState, useMemo, useRef } from 'react';
 import {
   ResponsiveContainer,
   ComposedChart,
@@ -14,9 +14,11 @@ import {
   CartesianGrid,
   ReferenceLine,
 } from 'recharts';
-import { Download, Table as TableIcon, SlidersHorizontal, Info } from 'lucide-react';
+import { Download, Image as ImageIcon, Table as TableIcon, SlidersHorizontal, Info } from 'lucide-react';
 import { IndicatorDataset } from '../types';
 import { exportIndicatorToCsv } from '../utils/exportCsv';
+import { exportChartImage } from '../utils/exportChartImage';
+import { SITE } from '../content/site';
 import { calculateMovingAverage, filterTimeRange } from '../utils/calculations';
 import { formatNumber } from '../utils/formatters';
 import { DataTableModal } from './DataTableModal';
@@ -34,6 +36,20 @@ export const IndicatorChart: React.FC<IndicatorChartProps> = ({
   const [showMovingAverage, setShowMovingAverage] = useState(false);
   const [showAnnotations, setShowAnnotations] = useState(true);
   const [isTableModalOpen, setIsTableModalOpen] = useState(false);
+  const [imageError, setImageError] = useState(false);
+  const chartRef = useRef<HTMLDivElement>(null);
+
+  const shareImage = () => {
+    if (!chartRef.current) return;
+    setImageError(false);
+    exportChartImage(chartRef.current, {
+      title: `${indicator.shortName} (${indicator.unit})`,
+      subtitle: `Last period: ${indicator.lastPeriod}`,
+      source: indicator.sourceName,
+      siteName: SITE.name,
+      filename: `${SITE.name.toLowerCase().replace(/[^a-z0-9]+/g, '-')}-${indicator.id}.png`,
+    }).catch(() => setImageError(true));
+  };
 
   // Compute filtered dataset & moving average
   const chartData = useMemo(() => {
@@ -124,6 +140,16 @@ export const IndicatorChart: React.FC<IndicatorChartProps> = ({
             <span>Data Table</span>
           </button>
 
+          {/* Download as an image with title and source */}
+          <button
+            onClick={shareImage}
+            className="inline-flex items-center gap-1 px-2.5 py-1 text-xs font-mono rounded-lg border border-slate-200 dark:border-slate-800 bg-white dark:bg-slate-900 text-slate-700 dark:text-slate-300 hover:bg-slate-50 dark:hover:bg-slate-800 transition-colors"
+            title="Download this chart as an image with its title and source"
+          >
+            <ImageIcon size={12} aria-hidden="true" />
+            <span className="hidden sm:inline">Image</span>
+          </button>
+
           {/* Download CSV */}
           <button
             onClick={() => exportIndicatorToCsv(indicator)}
@@ -137,7 +163,10 @@ export const IndicatorChart: React.FC<IndicatorChartProps> = ({
       </div>
 
       {/* Main Chart Graphic */}
-      <div className="w-full h-72 sm:h-88 pt-4">
+      {imageError && (
+        <p role="alert" className="mt-3 text-xs font-mono text-rose-700 dark:text-rose-300">The image could not be created in this browser. The CSV download still works.</p>
+      )}
+      <div ref={chartRef} className="w-full h-72 sm:h-88 pt-4">
         <ResponsiveContainer width="100%" height="100%">
           <ComposedChart
             data={chartData}

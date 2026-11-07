@@ -9,7 +9,7 @@ It is educational analysis, not financial, investment or legal advice.
 
 ## What is on the site
 
-- **Overview**: headline indicators with sparklines, source and date, plus a short written summary of where the economy stands.
+- **Overview**: a rotating "What matters now" banner (Reserve Bank rates, rand against the dollar, pound and euro, markets and commodities, the next MPC decision and data release, the latest official figures and the newest brief), an optional "what changed this week" note, a notice when any series is overdue for an update, headline indicators with sparklines, source and date, and a short written summary of where the economy stands. Glossary terms get plain-language tooltips.
 - **Indicators**: GDP growth, CPI inflation, the SARB repo rate, unemployment, the rand and government debt. Each has an interactive chart, a data table, a CSV download, definition notes and a written analysis with sources.
 - **Sectors**: banking, mining, retail and ICT, with the main policy issues in each. GDP-share and employment figures are blank until verified (see `VERIFY.md`).
 - **Calendar**: upcoming Reserve Bank decisions and data releases. Only dates marked confirmed have been checked against the institution's website.
@@ -39,7 +39,7 @@ npm run lint       # type-check
 | Overview page text | `content/overview.yml` | Yes |
 | Site name, footer, contact email, About page | `content/site.yml` | Yes |
 | Repo rate, QLFS, calendar, sectors | `content/data/*.yml` | Yes |
-| World Bank datasets (generated) | `public/data/*.json` | No (weekly job) |
+| World Bank datasets (generated) | `public/data/*.json` | No (daily job) |
 | Data scripts | `scripts/` | No |
 | Verification register | `VERIFY.md` | No |
 | Admin configuration | `public/admin/config.yml` | No |
@@ -58,8 +58,16 @@ Saving creates a commit, and the site updates a minute or two later. If a build 
 
 ## Keeping the data current
 
-- **World Bank series** (GDP, inflation, unemployment model, rand, debt): `npm run data:update` fetches them. A GitHub Actions workflow runs it weekly and opens a pull request, so changes are reviewed before they go live.
-- **Hand-maintained series** (repo rate, QLFS, sectors, calendar): edit them in the admin page. They are rebuilt from `content/data/*.yml` on every build and at the end of the weekly job, so the weekly job never overwrites them.
+- **Live Reserve Bank figures** (Overview banner): the visitor's browser reads the rates, currencies and markets from the SARB Web API (`custom.resbank.co.za/SarbWebApi`) when the page loads and again every five minutes (every minute on an MPC decision day, when the banner also switches to a "Decision day" slide). Nothing is stored in the browser. A figure the feed does not return, or returns outside a plausible range, is left out rather than shown. The Reserve Bank publishes these once a day, so they are current, not tick-by-tick. If the live repo rate differs from the reviewed repo rate, the banner says so, which is your reminder to update `content/data/repo_rate.yml`. Code: `src/utils/sarbLive.ts` and `src/components/NowBanner.tsx`.
+- **Trends and "since last time"** (`public/data/rates_history.json`): the "Daily rates snapshot" GitHub workflow records the Reserve Bank figures every weekday at 14:30 UTC and commits the file straight to `main`. It needs no review because it holds only Reserve Bank figures. If the Reserve Bank feed cannot be read, the workflow fails and GitHub emails you. The sparklines and up/down arrows start appearing after a few days of history.
+- **Calendar run-out alert**: the "Calendar check" workflow runs every Monday and opens a GitHub issue if fewer than three upcoming dates remain in the release calendar.
+- **Overdue-series notice**: `src/utils/staleness.ts` flags a series when the next period should already have been published. The notice appears on the Overview page and on the affected banner tile.
+- **RSS feed** (`/rss.xml`): rebuilt from the published articles on every build. For an email list, paste your sign-up form address into Site settings (the form is built for Buttondown: `https://buttondown.com/api/emails/embed-subscribe/YOUR-USERNAME`). Leave it empty to show only the RSS link.
+- **Glossary** (`content/glossary.yml`): terms and definitions, editable in the admin page under "Glossary and corrections". The first mention of each term in the Overview text and banner gets a tooltip automatically.
+- **Corrections** (`/corrections`): the log is `content/corrections.yml`, editable in the admin page.
+- **Chart images**: each indicator chart has an "Image" button that downloads a PNG with the title, source and site name.
+- **World Bank series** (GDP, inflation, unemployment model, rand, debt): `npm run data:update` fetches them. A GitHub Actions workflow runs it on weekdays at 05:00 UTC and opens a pull request only when a figure, period or source has actually changed (a new retrieval date alone does not count), so changes are reviewed before they go live.
+- **Hand-maintained series** (repo rate, QLFS, sectors, calendar): edit them in the admin page. They are rebuilt from `content/data/*.yml` on every build and at the end of the data job, so the job never overwrites them.
 
 Every dataset records its source, unit, frequency, last period and retrieval date, and the tests fail if any of these are missing.
 
